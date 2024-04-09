@@ -1,0 +1,177 @@
+
+:root{
+    --almost-white: hsl(0, 0%, 98%);
+    --gray: hsl(0, 0%, 41%);
+    --almost-black: hsl(0, 0%, 8%);
+}
+
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Epilogue", sans-serif;
+    
+ 
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-width: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+main{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+
+
+/* everything relate with the header  */
+
+header{
+    margin: 1rem 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+}
+
+button{
+    background: none;
+    border: none;
+    font-size: 18px;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.almoadilla{
+    width: 40px;
+    height: 40px;
+}
+
+.box{
+    visibility: hidden;
+    position: absolute;
+    background-color: cadetblue;
+    width: 50vw;
+    min-height: 100vh;
+    top: 0;
+    right: 0;
+    padding: 80px 1rem 1rem 1rem;
+    display: flex !important;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.close{
+    display: none;
+}
+
+
+.notDisplay{
+    display: none;
+}
+
+.active{
+    visibility: visible;
+    display: block
+}
+
+
+.almoadilla{
+    z-index: 5;
+    margin-left: auto;
+}
+
+ul{
+    list-style: none;
+    cursor: pointer;
+    padding: 0rem;
+    margin: 0.2rem;
+}
+li{
+    padding: .3rem .3rem .3rem 1rem;
+}
+
+
+
+
+
+
+
+/* finish   everything relate with the header  */
+
+
+
+
+@media (min-width: 700px) {
+
+    /* everything relate with the header  */
+    header{
+        gap: 40px;
+
+    }
+    .almoadilla{
+        display: none;
+    }
+    .box{
+        visibility: visible;
+        position: static;
+        min-height: auto;
+        align-items: center;
+        padding: 0;
+        width: 90%;
+        gap: 50px;
+        flex-direction: row;
+    }
+
+    .login, .active{
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav{
+        position: relative;
+    }
+
+    ul{
+        position: absolute;
+        top: calc(100%);
+        background-color: aqua;
+        width: max-content;
+        padding: 1rem;
+    }
+    .feature{
+        right: 0;
+    }
+    li{
+        padding: .3rem;
+        margin: 0;
+    }
+    .registre{
+        margin-left: auto;
+    }
+
+
+/* finish   everything relate with the header  */
+
+  }
